@@ -1,0 +1,17 @@
+.noteList {
+  padding: 1vw;
+}
+
+.noteItem {
+  padding: 1vw;
+  border-bottom: 0.01vw solid #ccc;
+  cursor: pointer;
+}
+
+.noteItem:hover {
+  background: #eaeaea;
+}
+
+.active {
+  background-color: #ddd;
+}
