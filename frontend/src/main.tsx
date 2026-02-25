@@ -11,7 +11,7 @@ createRoot(document.getElementById("root")!).render(
     <ModalsProvider>
       <AuthProvider>
         <NotesProvider>
-          <BrowserRouter>
+          <BrowserRouter basename={import.meta.env.BASE_URL}>
             <App />
           </BrowserRouter>
         </NotesProvider>
