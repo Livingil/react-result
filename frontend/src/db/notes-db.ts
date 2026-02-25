@@ -1,0 +1,15 @@
+import Dexie, { type Table } from "dexie";
+import type { Note } from "../context/notes/types";
+
+class NotesDB extends Dexie {
+  notes!: Table<Note, string>;
+
+  constructor() {
+    super("notes-db");
+    this.version(1).stores({
+      notes: "id,title,content",
+    });
+  }
+}
+
+export const notesDB = new NotesDB();
